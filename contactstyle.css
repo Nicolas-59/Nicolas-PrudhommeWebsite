@@ -63,6 +63,7 @@
   .contact-form label {
     display: block;
     margin-top: 10px;
+    color: #3b3b3b;
   }
   
   .contact-form input, .contact-form textarea {
