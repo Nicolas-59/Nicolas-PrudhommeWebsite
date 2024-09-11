@@ -19,8 +19,17 @@
         </ul>
       </div>
       <div class="main-content">
-        <h1>Contenu principal</h1>
-        <p>Ceci est le contenu principal de la page.</p>
+        <h1>Nicolas Prudhomme</h1>
+        <p>Le nombre d'années écoulées depuis le 4 février 2005 est : <span id="years"></span> années.</p>
+
+        <script>
+            const startDate = new Date('2005-02-04');
+            const currentDate = new Date();
+            const diffTime = currentDate - startDate;
+            const diffYears = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 365.25));
+            
+            document.getElementById('years').textContent = diffYears;
+        </script>
       </div>
 </body>
 </html>
