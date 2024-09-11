@@ -58,20 +58,20 @@
   
   .contact-form h2 {
     margin-bottom: 15px;
-    color: #3b3b3b;
+    color: #6d6d6d;
   }
   
   .contact-form label {
     display: block;
     margin-top: 10px;
-    color: #3b3b3b;
+    color: #131313;
   }
   
   .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #6e6e6e;
     border-radius: 4px;
   }
   
