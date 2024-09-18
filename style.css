@@ -45,9 +45,12 @@
   }
   
   .main-content {
-    margin-left: 270px;
+    margin-left: 270px; /* Keep this if you want space for the sidebar */
+    margin-right: auto;
     padding: 20px;
     width: 50%;
     position: relative;
+    display: flex;
+    justify-content: center; /* This ensures the content inside is centered */
   }
   
