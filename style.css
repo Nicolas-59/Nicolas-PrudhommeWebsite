@@ -65,3 +65,20 @@ iframe {
   border-radius: 5px;
   padding-left: 10px;
 }
+
+/* HBox - Horizontal layout */
+.hbox {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Adds space between items */
+  justify-content: space-between; /* Distribute space between items */
+}
+
+/* Optional: Style individual sections */
+.gauche, .droite {
+  flex: 1; /* Allows each section to grow equally */
+  padding: 20px;
+  background-color: #2a2a2a; /* Distinct background for sections */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a lifted effect */
+}
