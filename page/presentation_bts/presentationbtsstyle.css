@@ -114,6 +114,12 @@ body {
   flex: 1;
   padding: 20px;
   position: relative;
+
+}
+
+.SlamText, .SisrText h3 {
+  text-decoration: underline;
+  color: #fa7b70;
 }
 
 .lienSisr, .lienSlam {
