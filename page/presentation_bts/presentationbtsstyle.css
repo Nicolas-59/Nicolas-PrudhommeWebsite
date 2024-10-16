@@ -109,7 +109,7 @@ body {
 }
 
 .SlamText, .SisrText {
-  background-color: rgba(184, 176, 176, 0.253); /* Fond noir semi-transparent */
+  background-color: rgba(151, 140, 140, 0.479); /* Fond noir semi-transparent */
   flex: 1;
   padding: 20px;
   position: relative;
