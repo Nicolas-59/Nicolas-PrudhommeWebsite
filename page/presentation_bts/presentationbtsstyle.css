@@ -114,3 +114,7 @@ body {
   padding: 20px;
   position: relative;
 }
+
+.lienSisr, .lienSlam {
+  color: blue;
+}
