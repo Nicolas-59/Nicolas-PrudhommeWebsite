@@ -82,11 +82,13 @@ body {
 
 /* Optional: Style individual sections */
 .SLAM, .SISR {
-  flex: 1; /* Allows each section to grow equally */
+  flex: 1;
   padding: 20px;
-  background-color: #2a2a2a; /* Distinct background for sections */
+  background-color: rgba(0, 0, 0, 0.6); /* Fond noir semi-transparent */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a lifted effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #f8f8f8; /* Couleur du texte pour un meilleur contraste */
+  position: relative;
 }
 
 .sio {
