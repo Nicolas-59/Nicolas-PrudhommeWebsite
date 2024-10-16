@@ -63,3 +63,22 @@
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Encadrer la carte */
   }
+
+  /* Styles iframe pour la carte Google Maps */
+iframe {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour rendre le cadre plus net */
+  margin-bottom: 20px;
+}
+
+/* Styles pour la liste des missions */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: #f8f8f8;
+}
