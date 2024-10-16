@@ -80,11 +80,23 @@ body {
   justify-content: space-between; /* Distribute space between items */
 }
 
+.SISR {
+  background-image: url("../../ressource/stage/datacenter.jpg");
+  object-fit: cover;
+  background-size: cover;
+}
+
+.SLAM {
+  background-image: url("../../ressource/stage/code.jpg");
+  object-fit: cover;
+  background-size: cover;
+}
+
 /* Optional: Style individual sections */
 .SLAM, .SISR {
   flex: 1;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6); /* Fond noir semi-transparent */
+  background-color: rgba(61, 61, 61, 0.6); /* Fond noir semi-transparent */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: #f8f8f8; /* Couleur du texte pour un meilleur contraste */
@@ -96,16 +108,4 @@ body {
   background-color: #363636; /* Distinct background for sections */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a lifted effect */
-}
-
-.SISR {
-  background-image: url("../../ressource/stage/datacenter.jpg");
-  object-fit: cover;
-  background-size: cover;
-}
-
-.SLAM {
-  background-image: url("../../ressource/stage/code.jpg");
-  object-fit: cover;
-  background-size: cover;
 }
