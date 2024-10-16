@@ -117,7 +117,7 @@ body {
 
 }
 
-.SlamText, .SisrText h3 {
+.SlamText h3, .SisrText h3 {
   text-decoration: underline;
   color: #fa7b70;
 }
