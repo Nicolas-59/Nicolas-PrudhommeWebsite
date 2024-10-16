@@ -99,9 +99,11 @@ body {
 .SISR {
   background-image: url("../../ressource/stage/datacenter.jpg");
   object-fit: cover;
+  background-size: cover;
 }
 
 .SLAM {
   background-image: url("../../ressource/stage/code.jpg");
   object-fit: cover;
+  background-size: cover;
 }
