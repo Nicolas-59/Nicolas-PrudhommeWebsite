@@ -117,4 +117,5 @@ body {
 
 .lienSisr, .lienSlam {
   color: blue;
+  font-weight: bold;
 }
