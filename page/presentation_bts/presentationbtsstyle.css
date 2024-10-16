@@ -49,6 +49,7 @@ body {
     margin-bottom: 20px;
     color: #ff6f61; /* Distinct color for the heading */
     text-align: center; /* Center the text horizontally */
+    text-decoration: underline;
   }
 
     /* Effets sur le menu */
