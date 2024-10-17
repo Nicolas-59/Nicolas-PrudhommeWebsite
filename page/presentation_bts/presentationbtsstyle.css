@@ -97,6 +97,15 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a lifted effect */
 }
 
+.sio h2 {
+  text-decoration: underline;
+  color: #fa7b70;
+}
+
+.sio p , .SlamText p , .SisrText p {
+  color: #cecece;
+}
+
 .SISR {
   background-image: url("../../ressource/stage/datacenter.jpg");
   object-fit: cover;
