@@ -82,3 +82,9 @@ ul li {
   margin-bottom: 10px;
   color: #f8f8f8;
 }
+
+.vbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between items */
+}
