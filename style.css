@@ -85,3 +85,37 @@ iframe {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a lifted effect */
 }
+
+/* Styles pour les écrans de tablettes */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+  .main-content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  .hbox {
+    flex-direction: column; /* Affiche les sections en colonne */
+  }
+}
+
+/* Styles pour les petits écrans (mobiles) */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+  .hbox {
+    flex-direction: column; /* Affiche les sections en colonne */
+  }
+  .gauche, .droite {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+}
