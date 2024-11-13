@@ -1,12 +1,15 @@
-/* Corps de la page */
+/* Body */
 body {
-  font-family: 'Roboto', sans-serif; /* Utilisation d'une police moderne */
-  background-color: #181818; /* Amélioration du contraste */
+  font-family: 'Roboto', sans-serif;
+  background-color: #181818;
   color: #f8f8f8;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-  
-/* Menu latéral */
+
+/* Sidebar */
 .sidebar {
   width: 250px;
   height: 100vh;
@@ -15,73 +18,129 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
 }
 
 .sidebar ul li a {
   color: #b0b0b0;
   text-decoration: none;
   font-size: 18px;
-  transition: color 0.3s ease;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
   color: #ffffff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Ajout d'un effet lumineux */
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
-  
-/* Contenu principal */
+
+/* Main Content */
 .main-content {
   margin-left: 270px;
   padding: 30px;
   background-color: #1e1e1e;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour rendre le contenu plus "flottant" */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-  
-  .contact-form {
-    background-color: #666666;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .contact-form h2 {
-    margin-bottom: 15px;
-    color: #131313;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin-top: 10px;
-    color: #131313;
-  }
-  
-  .contact-form input, .contact-form textarea {
+
+/* Contact Form */
+.contact-form {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+  color: #f8f8f8;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  color: #cccccc;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background-color: #252525;
+  color: #f8f8f8;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #5cb85c;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #5cb85c;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #4cae4c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #6e6e6e;
-    border-radius: 4px;
-  }
-  
-  .contact-form button {
-    margin-top: 15px;
-    padding: 10px 15px;
-    background-color: #5cb85c;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .contact-form button:hover {
-    background-color: #4cae4c;
+    height: auto;
+    position: relative;
+    box-shadow: none;
   }
 
-/* Effets sur le menu */
-.sidebar ul li:hover {
-  background-color: #333;
-  border-radius: 5px;
-  padding-left: 10px;
+  .sidebar ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .contact-form {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    font-size: 18px;
+  }
 }
