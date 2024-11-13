@@ -92,4 +92,6 @@ body {
 
 .lssolution img {
   background-color: #b0b0b0;
+  height: auto;
+  max-width: 50%;
 }
