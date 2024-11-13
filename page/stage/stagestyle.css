@@ -21,73 +21,57 @@ body {
   color: #b0b0b0;
   text-decoration: none;
   font-size: 18px;
-  transition: color 0.3s ease;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
+  background-color: #333;
   color: #ffffff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Ajout d'un effet lumineux */
+  border-radius: 5px;
 }
 
+/* Contenu principal */
+.main-content {
+  margin-left: 270px;
+  padding: 30px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour rendre le contenu plus "flottant" */
+}
 
+/* Titres dans le contenu principal */
+.main-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff6f61; /* Couleur distincte pour le titre */
+  text-align: center; /* Centrer le texte */
+  text-decoration: underline;
+}
+
+/* Disposition verticale */
 .vbox {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Adds space between items */
+  gap: 20px;
 }
 
-/* HBox - Horizontal layout */
+/* Disposition horizontale */
 .hbox {
   display: flex;
   flex-direction: row;
-  gap: 20px; /* Adds space between items */
-  justify-content: space-between; /* Distribute space between items */
+  gap: 20px;
+  justify-content: space-between;
 }
 
-  /* Contenu principal */
-  .main-content {
-    margin-left: 270px;
-    padding: 30px;
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour rendre le contenu plus "flottant" */
-  }
-  
-  .main-content {
-    margin-left: 270px;
-    padding: 20px;
-  }
-  
-  /* Centering the H1 in main-content */
-  .main-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #ff6f61; /* Distinct color for the heading */
-    text-align: center; /* Center the text horizontally */
-    text-decoration: underline;
-  }
-
-    /* Effets sur le menu */
-  .sidebar ul li:hover {
-    background-color: #333;
-    border-radius: 5px;
-    padding-left: 10px;
-  }
-
-    /* Carte Google Maps */
-.map1 iframe {
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Encadrer la carte */
-    }
-
-/* Optional: Style individual sections */
+/* Section LS Solution */
 .lssolution {
-  flex: 1; /* Allows each section to grow equally */
+  flex: 1;
   padding: 20px;
-  background-color: #2a2a2a; /* Distinct background for sections */
+  background-color: #2a2a2a;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a lifted effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce pour effet de profondeur */
 }
 
 .lssolution img {
@@ -96,7 +80,44 @@ body {
   max-width: 50%;
 }
 
+/* Bouton pour visiter le site */
 .sitels {
   width: 130px;
   max-height: 40px;
+  padding: 10px;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sitels:hover {
+  background-color: #e85b53;
+}
+
+/* Carte Google Maps */
+.map1 iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles responsifs */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+  .hbox {
+    flex-direction: column;
+  }
 }
