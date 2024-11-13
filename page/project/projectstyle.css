@@ -39,3 +39,11 @@ body {
   border-radius: 5px;
   padding-left: 10px;
 }
+
+.powerplay {
+  border-radius: 5px;
+}
+
+.powerplay img {
+  max-width: 50%;
+}
