@@ -119,7 +119,7 @@ body {
 }
 
 .SlamText, .SisrText {
-  background-color: rgba(151, 140, 140, 0.479); /* Fond noir semi-transparent */
+  background-color: rgba(151, 140, 140, 0.452); /* Fond noir semi-transparent */
   flex: 1;
   padding: 20px;
   position: relative;
@@ -134,4 +134,20 @@ body {
 .lienSisr, .lienSlam {
   color: blue;
   font-weight: bold;
+}
+
+/* Exemple pour écrans de moins de 768px */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 100%; /* Faire en sorte que le menu latéral prenne toute la largeur */
+      height: auto;
+      position: relative; /* Permet à la barre de se déplacer sous le contenu si nécessaire */
+  }
+  .main-content {
+      margin-left: 0;
+      padding: 20px;
+  }
+  .hbox {
+      flex-direction: column; /* Place les éléments les uns sous les autres sur petits écrans */
+  }
 }
