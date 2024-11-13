@@ -89,3 +89,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a lifted effect */
 }
+
+.lssolution img {
+  background-color: #b0b0b0;
+}
