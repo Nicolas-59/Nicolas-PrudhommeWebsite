@@ -95,3 +95,8 @@ body {
   height: auto;
   max-width: 50%;
 }
+
+.sitels {
+  width: 130px;
+  max-height: 40px;
+}
