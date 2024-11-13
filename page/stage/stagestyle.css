@@ -121,3 +121,13 @@ body {
     flex-direction: column;
   }
 }
+
+  .stage1 {
+    background-color:#252525;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .mission1 {
+    background-color: #333;
+  }
