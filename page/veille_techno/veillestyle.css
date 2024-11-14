@@ -83,3 +83,8 @@ body {
     height: auto;
     margin: 20px;
   }
+
+  .vbox2 img {
+    width: auto;
+    height: auto;
+  }
