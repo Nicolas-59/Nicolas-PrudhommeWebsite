@@ -67,3 +67,19 @@ body {
     text-align: justify; /* Alignement du texte */
   }
   
+  .vbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .vbox2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 20px;
+  }
