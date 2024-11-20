@@ -128,10 +128,6 @@ button:hover {
         position: relative;
     }
 
-    .sidebar ul li {
-        text-align: center;
-    }
-
     .sidebar ul li a {
         display: inline-block;
         margin: 0 10px;
